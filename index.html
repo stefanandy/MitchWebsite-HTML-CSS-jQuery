@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="/mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body >      
+
+
+
+    <div class="container">
+            <div class="menu-btn" >
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="index.html">Acasa</a></li>
+                    <li><a href="despre.html">Despre </a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        <div class="back-left">
+            <a href="history.html"><img class="image-top" style="width: 35%; top:180px" src="Site-parts/History_Left.png"></a>
+            <img class="image-under"  src="Site-parts/Background_left.png"></div>
+        <div class="back-right">
+            <a href="sfaturi.html"><img class="image-top animate bounce" style="width: 50%; top:169px; ;" src="Site-parts/Grill_right.png"></a>
+            <img class="image-under" src="Site-parts/Backgroud_right.png">
+        </div>
+    </div>
+    <script>
+            $(document).ready(function(){
+                 $('.menu-btn').click(function(){
+                     $('.line1').toggleClass('close1');
+                     $('.line2').toggleClass('close2');
+                     $('.line3').toggleClass('close1');
+                     $('.sidebar').toggleClass('side');
+                     $('.menu-btn').toggleClass('move-burger');
+                 });
+             });
+         </script>
+    <script type="text/javascript" src="anim.js"></script>
+</body>
+</html>
